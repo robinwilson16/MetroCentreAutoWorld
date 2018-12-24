@@ -3,7 +3,33 @@
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>@ViewData["Title"]</h2>
+            <h3>@Model.Message</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="~/images/TroubleGettingFinanceWeCanHelp.jpg" class="img-fluid mx-auto d-block" alt="Trouble getting finance? We can help">
+        </div>
+        <div class="col-sm-8">
+            <p>Metro Centre Auto World is a family owned and run business.</p>
+
+            <p>We pride ourselves on the great service we provide to all of our customers.</p>
+
+            <p>Been turned down for finance? We can help with finance options tailored to suit your needs.</p>
+
+            <p>We understand that buying a car can be a daunting prospect, so we strive to make the buying process as simple and hassle-free as possible.</p>
+
+            <p>But don't just take our word for it, <a href="https://www.autotrader.co.uk/services/car-dealers/uk/north-east/tyne-and-wear/gateshead/mainline-uk-gateshead-dpp-27856/reviews/true" target="_blank" rel="noopener">see what some of our customers have to say about us...</a></p>
+
+            <a class="btn btn-light" href="https://www.autotrader.co.uk/services/car-dealers/uk/north-east/tyne-and-wear/gateshead/mainline-uk-gateshead-dpp-27856/reviews/true" target="_blank" rel="noopener">
+                See what people are saying
+            </a>
+        </div>
+    </div>
+</div>

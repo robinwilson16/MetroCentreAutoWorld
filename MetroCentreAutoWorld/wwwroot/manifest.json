@@ -1,0 +1,23 @@
+﻿{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Metro Centre Auto World",
+  "short_name": "MC AutoWorld",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2e3192",
+  "background_color": "#00acee",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "natural"
+}

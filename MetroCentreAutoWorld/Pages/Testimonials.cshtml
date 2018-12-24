@@ -1,0 +1,15 @@
+﻿@page
+@model TestimonialsModel
+@{
+    ViewData["Title"] = "Testimonials";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>@ViewData["Title"]</h2>
+            <h3>@Model.Message</h3>
+            <iframe src="https://www.mainlineuksales.co.uk/reviews" class="iframe" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
