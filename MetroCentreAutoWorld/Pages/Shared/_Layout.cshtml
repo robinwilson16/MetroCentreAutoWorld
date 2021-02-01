@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MetroCentreAutoWorld</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/twitter-bootstrap/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" crossorigin="anonymous" />
-    </environment>
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.min.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/ekko-lightbox/ekko-lightbox.css" asp-append-version="true">
+
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" asp-append-version="true">
 
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -75,26 +70,19 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018-2020 - MetroCentreAutoWorld</p>
+            <p>&copy; 2018-2021 - MetroCentreAutoWorld</p>
         </footer>
     </div>
 
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/lib/momentjs/moment-with-locales.min.js" asp-append-version="true"></script>
+    <script src="~/lib/marked/marked.min.js" asp-append-version="true"></script>
+    <script src="~/lib/ekko-lightbox/ekko-lightbox.min.js" asp-append-version="true"></script>
+    <script src="~/lib/ScrollMagic/ScrollMagic.min.js" asp-append-version="true"></script>
+
     <environment include="Development">
-        <script src="~/lib/jquery/jquery.js"></script>
-        <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
-        <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-                asp-fallback-src="~/lib/jquery/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous">
-        </script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-                asp-fallback-src="~/lib/twitter-bootstrap/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous">
-        </script>
+        <script src="~/lib/ScrollMagic/plugins/debug.addIndicators.js" asp-append-version="true"></script>
     </environment>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
